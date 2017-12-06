@@ -1,0 +1,16 @@
+<br>
+<button (click) = "print($event)">Click to recieve welcome</button>
+
+<h1>{{myObject}}</h1>
+<br>
+experiment 1: <input type="text" (keyup)="onKey($event)">
+<p>{{values}}</p>
+<br>
+experiment 2: <input type="text" id="test" (keyup)="print1($event)">
+<p>{{x}}</p>
+<br>
+experiment 3: <input type="text" #refer (keyup)="print2(refer.value)">
+<p>{{y}}</p>
+<br>
+<button (click) = "printHello(reference.value)">Print below text box's contents in console</button>
+<input type = "text" #reference>
